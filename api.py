@@ -81,7 +81,7 @@ def get_exercise_by_id(exercise_id):
                         mimetype='application/json',
                         status=200
                     )
-                    response.headers.add('Access-Control-Allow-Origin', '*')
+            response.headers.add('Access-Control-Allow-Origin', '*')
             return response
     return json.dumps({'error': 'Exercise not found'})
 
